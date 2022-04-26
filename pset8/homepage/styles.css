@@ -1,0 +1,75 @@
+h1 {
+  box-sizing: border-box;
+  text-align: center;
+  border-style: inset;
+  margin: 80px;
+  padding: 30px;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 4em;
+}
+p {
+    color: black;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background:#FAEBD7
+}
+.container {
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 2em;
+  margin: 30px;
+  padding: 30px;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 2em;
+  margin: 30px;
+  padding: 30px;
+}
+.topright {
+  position: absolute;
+  top: 10px;
+  right: 1px;
+  font-size: 18px;
+}
+.backround {
+  width:126%;
+  margin-left:30px;
+}
+dl{
+  margin-left: 120px;
+  margin-top: 80px;
+}
+h2{
+  text-align: center;
+  color: #660033;
+  text-shadow: 2px 2px 5px red;
+  font-size: 40px
+}
+.lab{
+  float: right;
+  margin-left: 15px;
+  margin-right: 50px;
+  width: 30%;
+  }
+.img-container {
+  float: left;
+  width: 33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
