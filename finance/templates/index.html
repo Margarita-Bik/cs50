@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Summary
+{% endblock %}
+
+{% block main %}
+   <p>
+       Your Grand total (stocks and cash) is {{total | usd}}
+    </p>
+    <p>
+       The rest of your cash is {{ccash | usd}}
+    </p>
+    <p>
+       <table>
+  <thead>
+    <th scope = "col">Symbol</th>
+    <th scope = "col">Shares</th>
+    <th scope = "col">Price</th>
+    <th scope = "col">Total</th>
+    <th scope = "col">Buy</th>
+    <th scope = "col">Sell</th>
+  </thead>
+    {% for stock in stocks %}
+  <tr>
+    <td>{{stock.symbol}}</td>
+    <td>{{stock.shares}}</td>
+    <td>{{stock.price | usd}}</td>
+    <td>{{stock.sumpr | usd}}</td>
+    <td>
+      <form action = "/buy" method= "POST">
+        <input name = "symbol" value= {{stock.symbol}} hidden />
+        <input name = "shares" type="number" />
+        <button class="btn btn-primary" type= "submit">Buy</button>
+      </form>
+    </td>
+    <td>
+      <form action = "/sell" method= "POST">
+        <input name = "symbol" value= {{stock.symbol}} hidden />
+        <input name = "shares" type="number" max={{stock.shares}} />
+        <button class="btn btn-primary" type= "submit">Sell</button>
+      </form>
+    </td>
+  </tr>
+    {% endfor %}
+</table>
+   </p>
+{% endblock %}
