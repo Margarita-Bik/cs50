@@ -1,0 +1,12 @@
+Exercise "speller" by cs50
+
+For this problem, you’ll implement a program that spell-checks a file, using a hash table.
+Alright, the challenge now before you is to implement, in order, load, hash, size, check, and unload as efficiently as possible using a hash table in such a way that TIME IN load, TIME IN check, TIME IN size, and TIME IN unload are all minimized. To be sure, it’s not obvious what it even means to be minimized, in as much as these benchmarks will certainly vary as you feed speller different values for dictionary and for text. But there in lies the challenge, if not the fun, of this problem. This problem is your chance to design. Although we invite you to minimize space, your ultimate enemy is time. 
+
+TIME IN load represents the number of seconds that speller spends executing your implementation of load. TIME IN check represents the number of seconds that speller spends, in total, executing your implementation of check. TIME IN size represents the number of seconds that speller spends executing your implementation of size. TIME IN unload represents the number of seconds that speller spends executing your implementation of unload. TIME IN TOTAL is the sum of those four measurements.
+
+Note that these times may vary somewhat across executions of speller, depending on what else your codespace is doing, even if you don’t change your code.
+
+Incidentally, to be clear, by “misspelled” we simply mean that some word is not in the dictionary provided.
+
+The challenge ahead of you is to implement the fastest spell checker you can! By “fastest,” though, we’re talking actual “wall-clock,” not asymptotic, time.
