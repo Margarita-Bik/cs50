@@ -1,0 +1,6 @@
+Exercise "scrabble" by cs50
+
+Complete the implementation of scrabble.c, such that it determines the winner of a short scrabble-like game, where two players each enter their word, and the higher scoring player wins.
+
+Notice that we’ve stored the point values of each letter of the alphabet in an integer array named POINTS.
+For example, A or a is worth 1 point (represented by POINTS[0]), B or b is worth 3 points (represented by POINTS[1]), etc.
